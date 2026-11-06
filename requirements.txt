@@ -1,0 +1,6 @@
+numpy==1.26.4
+biopython==1.86
+transformers==4.38.1
+torch==2.2.0
+mamba-ssm==1.2.0.post1
+causal-conv1d==1.2.0.post2

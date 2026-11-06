@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proglhm"
+version = "0.1.0"
+description = "Promoter recognition with genomic language representations and hybrid modelling"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+authors = [{name = "ProGLHM contributors"}]
+dependencies = [
+  "numpy==1.26.4",
+  "biopython==1.86",
+  "transformers==4.38.1",
+  "torch==2.2.0",
+  "mamba-ssm==1.2.0.post1",
+  "causal-conv1d==1.2.0.post2",
+]
+
+[project.scripts]
+proglhm = "proglhm.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["proglhm*"]
+
